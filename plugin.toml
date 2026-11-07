@@ -1,0 +1,29 @@
+id = "democe/ups-widget"
+name = "nut upsc monitor"
+version = "1.0.0"
+plugin_api = 24
+author = "democe"
+license = "MIT"
+description = "Show Network UPS Tools status and battery charge in the Noctalia bar."
+tags = ["battery", "power", "nut"]
+dependencies = ["nut-client"]
+
+[[widget]]
+id = "ups"
+entry = "ups.luau"
+
+  [[widget.setting]]
+  key = "ups_name"
+  type = "string"
+  label_key = "settings.ups_name.label"
+  description_key = "settings.ups_name.description"
+  default = "ups@localhost"
+
+  [[widget.setting]]
+  key = "refresh_seconds"
+  type = "int"
+  label_key = "settings.refresh_seconds.label"
+  description_key = "settings.refresh_seconds.description"
+  default = 5
+  min = 2
+  max = 60

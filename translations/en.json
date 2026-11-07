@@ -1,0 +1,6 @@
+{
+  "settings.ups_name.label": "UPS name",
+  "settings.ups_name.description": "NUT identifier passed to upsc, for example ups@localhost.",
+  "settings.refresh_seconds.label": "Refresh interval",
+  "settings.refresh_seconds.description": "How often to poll the UPS, in seconds."
+}
